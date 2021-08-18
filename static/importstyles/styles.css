@@ -1,0 +1,711 @@
+@import ".largescreens.css";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@700&display=swap');
+
+span {
+    color: white;
+}
+
+body {
+    font-family: 'Varta', sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+#front-nav {
+    display:none;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#one {
+    height: 209px;
+    background-image: url("../images/bandwebsitepic.png");
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    color: white;
+    background-color: black;
+}
+
+#player-holder {
+    margin-bottom: 30px;
+    height: 200px;
+    
+
+}
+
+#three {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    color: black;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#video-holder {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+#four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+
+#event-holder {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+#five {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    background-color: white;
+    color: black;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.merch {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 300px;
+    width: 100%;
+
+}
+
+.bit-widget {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+#footer-icons {
+    display: none;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#designer {
+    color: white;
+    font-size: 0.7em;
+    padding-bottom: 25px;
+}
+
+/* nav and sidebar */
+
+.nav-main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-end;
+    align-content: flex-end;
+    z-index: 1000;
+  }
+  
+  .btn-toggle-nav {
+    width: 70px;
+    height: 100%;
+    padding-bottom: 12px;
+    background-image: url("../images/burger.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position:center;
+    cursor: pointer;
+  }
+
+  .close-nav > img {
+    width: 40px;
+    height: 100%;
+    margin-left: -60px;
+    background-repeat:no-repeat;
+    background-size: 50%;
+    background-position:center;
+    cursor: pointer;
+  }
+  
+  .btn-toggle-nav:hover {
+    opacity: 0.9;
+  }
+  
+  .nav-main ul {
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding-right: 40px;
+    padding-left: 0;
+  }
+  
+  .nav-main ul li {
+    list-style: none;
+    line-height: 50px;
+  }
+  
+  .nav-main ul li a {
+    display: flex;
+    height: 100%;
+    padding: 7 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #30b89c;
+    font-family:'Mouse Memoirs';
+    font-size: 7vw;
+    text-shadow: 2px 2px black;
+  }
+  
+  .nav-sidebar {
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: calc(100vh - 0px);
+    background-color: black;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-sidebar ul {
+    display: block;
+    height: fit-content;
+    padding-top: 90px;
+    overflow: hidden;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    text-align: center;
+  }
+  
+  .nav-sidebar ul li {
+    
+    line-height: 60px;
+    list-style:none;
+  }
+  
+  .nav-sidebar ul li span, .nav-sidebar ul li a  {
+    display: block;
+    height: 50px;
+    padding: 0 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+  #nav-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 260px; 
+      margin-left: 20px;
+  }
+
+
+  svg {
+      padding: 10px;
+      margin-right: 19px;
+  }
+  /*end of nav & sidebar*/
+
+
+/* Landscape iphone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+      
+    #one {
+        height: 370px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: inherit;
+    }
+
+    #logo {
+        height: 100px; 
+        width: 45%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #more-videos {
+        margin-top: 100px;
+    }
+
+    #nav-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+        margin-left: 20px;
+    }
+
+    .nav-sidebar ul {
+        display: block;
+        height: fit-content;
+        padding-top: 120px;
+        overflow: hidden;
+        visibility: visible;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40px;
+        text-align: center;
+      }
+
+  }
+
+/* Portrait iphone 6,7,8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    #logo {
+        height: 70px; 
+        width: 45%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+
+
+/* Landscape iphone 6,7,8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    body {
+        font-family: 'Varta', sans-serif;
+        width: fit-content;
+    }
+
+    #one {
+        height: 415px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: inherit;
+    }
+
+    #logo {
+        height: 100px; 
+        width: 45%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #more-videos {
+        margin-top: 100px;
+    }
+
+    #nav-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px; 
+        margin-left: 20px;
+    }
+
+    .nav-sidebar {
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: stretch;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        width: 0px;
+        height: calc(140vh - 0px);
+        background-color: black;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-sidebar ul {
+        display: block;
+        height: fit-content;
+        padding-top: 140px;
+        overflow: hidden;
+        visibility: visible;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40px;
+        text-align: center;
+      }
+}
+
+
+@media (min-width: 500px) {
+
+    #two {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        height: 450px;
+        color: white;
+        background-color: black;
+    }
+
+    #three {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 480px;
+        color: black;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+  
+    #five {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 2100px;
+        background-color: white;
+        color: black;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    
+    }
+
+    .merch {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 550px;
+        width: 100%;
+    } 
+
+    .btn-toggle-nav {
+        display: none;
+        width: 70px;
+        height: 100%;
+        background-image: url(../images/whiteburger.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #spotify {
+        height: 420px;
+        width: 667px;
+    }
+
+    iframe {
+        width: 667px;
+        height: 300px;
+    }
+    
+    #player-holder {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    #video-holder {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 200px;
+        padding-bottom: 10px;
+
+    }
+
+    .btn-toggle-nav {
+        display: flex;
+        width: 70px;
+        height: 100%;
+        background-image: url(../images/whiteburger.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        cursor: pointer;
+    }
+
+
+
+  @media (min-width: 1000px) {
+
+    h1 {
+        font-size: 50px;
+        margin-top: -1px;
+        margin-bottom: -2px;
+    }
+
+
+
+    #one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 720px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    
+    #title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo {
+        height: 160px;
+        width: 40%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #two {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        height: 450px;
+        color: white;
+        background-color: black;
+    }
+
+    .btn-toggle-nav {
+        display: none;
+        width: 70px;
+        height: 100%;
+        background-image: url(../images/whiteburger.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #spotify {
+        height: 420px;
+        width: 1000px;
+    }
+
+    iframe {
+        width: 1000px;
+        height: 700px;
+    }
+    
+    #player-holder {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    #three {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 25px;
+        align-items: center;
+        height: 850px;
+        color: black;
+        background-color: white;
+       
+        padding-bottom: 20px;
+    }
+
+    #five {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        background-color: white;
+        color: black;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    
+    }
+
+    #merch-holder {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .merch {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 440px;
+        
+        padding: 10px;
+    }
+
+    #pic1 {
+        width: 80%;
+    }
+
+    #pic2 {
+        width: 80%;
+    }
+
+    #pic3 {
+        width: 100%;
+        margin-right: 90px;
+    }
+
+
+    #front-nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.356);
+        /*opacity: 0.7;*/
+        
+
+    }
+
+    #nav-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        color: white;
+        padding-right: 40px;
+        list-style-type: none;
+        font-size: 30px;
+    }
+
+    #svg {
+        padding: 10px;
+        margin-right: 14px;
+    }
+
+    #footer-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        width: 70px;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+}

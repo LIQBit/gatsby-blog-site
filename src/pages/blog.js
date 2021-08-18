@@ -1,11 +1,14 @@
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import { renderRichText } from "gatsby-source-contentful/rich-text";
 
 import Layout from '../components/layout';
 import*as blogStyles from './blog.module.scss';
 
 import { Helmet } from 'react-helmet';
 import Head from '../components/head';
+
+import bandpic from '/static/images/bandwebsitepic.png';
 
 const Blogpage = () => {
     
@@ -22,16 +25,23 @@ const Blogpage = () => {
                        title
                        slug
                        publishedDate (formatString: "MMMM Do, YYYY")
+                       body {
+                           raw
+                           references {
+                               description
+                           }
+                       }
                    }
                }
            }
        }
     `)
+    console.log(data)
 
     return(
             <Layout>
                 <Head title="Blog" />
-                <h1>Blog</h1>
+                <h1>Blog Posts</h1>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map(edge => (
                         <li className={blogStyles.post}>

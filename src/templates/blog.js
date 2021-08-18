@@ -18,7 +18,7 @@ export const query = graphql`
             ... on ContentfulAsset {
               contentful_id
               __typename
-              fixed(width: 1600) {
+              fixed(width: 2800, height: 1000) {
                 width
                 height
                 src
@@ -53,9 +53,11 @@ const Blog = ({data}) => {
     return(
         <Layout>
           <Head title={data.contentfulBlogPost.title} />
-            <h1>{data.contentfulBlogPost.title}</h1>
-            <p>{data.contentfulBlogPost.publishedDate}</p> 
-            {renderRichText(data.contentfulBlogPost.body, options)}
+            <div>
+              <h1>{data.contentfulBlogPost.title}</h1>
+              <p>{data.contentfulBlogPost.publishedDate}</p> 
+              {renderRichText(data.contentfulBlogPost.body,options)}
+            </div>
         </Layout>
     )
 }

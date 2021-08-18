@@ -1,0 +1,167 @@
+ @media (min-width: 1000px) {
+
+    h1 {
+        font-size: 50px;
+        margin-top: -1px;
+        margin-bottom: -2px;
+    }
+
+
+    #one {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 720px;
+        background-image: url("../images/bandwebsitepic.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+    
+    #title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #logo {
+        height: 160px;
+        width: 40%;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #two {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        height: 450px;
+        color: white;
+        background-color: black;
+    }
+
+    .btn-toggle-nav {
+        display: none;
+        width: 70px;
+        height: 100%;
+        background-image: url(../images/whiteburger.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #spotify {
+        height: 420px;
+        width: 1000px;
+    }
+
+    iframe {
+        width: 1000px;
+        height: 700px;
+    }
+    
+    #player-holder {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: 200px;
+    }
+
+    #three {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 25px;
+        align-items: center;
+        height: 850px;
+        color: black;
+        background-color: white;
+       
+        padding-bottom: 20px;
+    }
+
+    #five {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        background-color: white;
+        color: black;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    
+    }
+
+    #merch-holder {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .merch {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 440px;
+        
+        padding: 10px;
+    }
+
+    #pic1 {
+        width: 80%;
+    }
+
+    #pic2 {
+        width: 80%;
+    }
+
+    #pic3 {
+        width: 100%;
+        margin-right: 90px;
+    }
+
+
+    #front-nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.356);
+        /*opacity: 0.7;*/
+        
+
+    }
+
+    #nav-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        color: white;
+        padding-right: 40px;
+        list-style-type: none;
+        font-size: 30px;
+    }
+
+    #svg {
+        padding: 10px;
+        margin-right: 14px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+  }
