@@ -11,8 +11,10 @@ const aboutPage = () => {
         <div>
             <Layout>
                 <Head title="About" />
-                <h1>About Me</h1>
-                <p>Here is some text that is all about me.<Link to="/contact">Contact me!</Link> There will be more text here later.</p>
+                <h1>SURVIVING DECEMBER</h1>
+                <p>Yearning for the sounds of the true punk rock you grew up with?
+                    We can transport you back!
+                </p>
             </Layout>
         </div>
     )

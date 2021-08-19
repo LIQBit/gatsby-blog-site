@@ -10,10 +10,10 @@ const contactPage = () => {
         <div>
             <Layout>
                 <Head title="Contact" />
-                <h1>Contact Details</h1>
-                <p>ph: 444-4444
+                <h1>CONTACT US</h1>
+                <p>ph: +44 7976 210101
                     <br />
-                    email: man@man.com
+                    email: survivingdecember@outlook.com
                     <br />
                     <a href="https://twitter.com" target="blank">twitter</a>
                 </p>
